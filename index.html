@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Machado - Desenvolvedor Full Stack</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+ 
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #000; 
+            color: #00ff00; 
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: #000;
+            padding: 10px;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        .navbar-toggler {
+            border-color: #00ff00;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #00ff00;
+        }
+
+        .navbar-nav .nav-link {
+            color: #00ff00;
+            font-size: 18px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00cc00;
+        }
+
+        h2 {
+            color: #00ff00;
+            text-transform: uppercase;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            padding: 60px 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 2px solid #00ff00;
+        }
+
+        .summary {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #00ff00;
+        }
+
+        .portfolio-description a {
+            color: #00ff00;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .contact-section a {
+            color: #00ff00;
+        }
+
+        .contact-section a:hover {
+            color: #00cc00;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #00ff00;
+            border-top: 1px solid #00ff00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Joel Machado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#quem-sou">Quem Sou</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quem Sou Section -->
+    <div id="quem-sou" class="container section">
+        <div class="about-section d-flex align-items-center">
+            <img src="img/eu.jpg" alt="Foto de Joel Machado" class="profile-pic">
+            <div>
+                <h2>Joel Machado</h2>
+                <p class="summary">+55 (45) 99800-3820 | <a href="mailto:joel.machado5@gmail.com">joel.machado5@gmail.com</a></p>
+                <p class="summary">Desenvolvedor Full Stack com ampla experiência em PHP, Laravel e várias tecnologias de front e back-end. Proativo e comprometido com a entrega de soluções escaláveis e de qualidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="container section">
+        <h2>Portfólio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/site-em-wordpress.jpg" width="300" alt="Projeto 1">
+                <p class="portfolio-description">Landing page - <a href="#">Visitar Projeto</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/desenvolvedor-wordpress.jpg" width="300" alt="Projeto 2">
+                <p class="portfolio-description">Website - <a href="#">Visitar Projeto</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/desenvolvedor-wp.jpg" width="300" alt="Projeto 3">
+                <p class="portfolio-description">Sistema - <a href="#">Visitar Projeto</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="img/desenvolvimento-de-sistemas.jpg" width="300" alt="Projeto 1">
+                <p class="portfolio-description">Site hotel - <a href="#">Visitar Projeto</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/programador-php-freelancer.jpg" width="300" alt="Projeto 2">
+                <p class="portfolio-description">Site contabilidade - <a href="#">Visitar Projeto</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/wordpress-site.jpg" width="300" alt="Projeto 3">
+                <p class="portfolio-description">Site em Wordpress- <a href="#">Visitar Projeto</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Habilidades Section -->
+    <div id="skills" class="container section">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>PHP, Laravel, Blade, Vue.js, React.js</li>
+            <li>MySQL, PostgreSQL, Oracle</li>
+            <li>HTML, CSS, JavaScript, TypeScript</li>
+        </ul>
+    </div>
+
+    <!-- Experiência Section -->
+    <div id="experiencia" class="container section">
+        <h2>Experiência Profissional</h2>
+        <article>
+            <h3>SUNSET TIRES</h3>
+            <p>Cargo: Analista de sistemas – 11/2021 – 12/2023</p>
+        </article>
+        <article>
+            <h3>Imagística</h3>
+            <p>Cargo: Analista de sistemas – 06/2018 – 10/2021</p>
+        </article>
+    </div>
+
+    <!-- Contato Section -->
+    <div id="contato" class="container section">
+        <h2>Contato</h2>
+        <p>Entre em contato via <a href="mailto:joel.machado5@gmail.com">Email</a></p>
+        <p>Ligue: +55 (45) 99800-3820</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Joel Machado - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
